@@ -488,4 +488,10 @@ footer {
     .img-svg img{
         height: 80%;
     }
+    .header.unscrolled .img-svg{
+        display:none;
+    }
+    .header.unscrolled .hamburger{
+        color: var(--base-yellow);
+    }
 }
