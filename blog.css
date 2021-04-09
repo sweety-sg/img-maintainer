@@ -32,30 +32,37 @@ body{
     flex-direction: row;
     width: 100%;
     height: 8vh;
-    z-index: 1px;
+    z-index: 1;
+}
+ .header .middle .img-svg{
+    
+    justify-self: flex-start;
+    align-items: flex-start;
+    width: auto;
+    padding: 1px;
+    height:100%;
 }
 
-.header .middle .left{
+.header .middle {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 50%;
-    flex-wrap:nowrap;
-    padding: 1px;
-    height:100%;
-    z-index: 1px;
+    justify-content: space-between;
 }
 
-.left .img-logo {
-    height:60%;
-    padding: 1px;
-    justify-content: flex-start;
-    align-items: center;
-    }
 
-img{
-    height:100%;
+.img-svg{
+    display: flex !important;
+    height:70% !important;
+    width: auto;
+}
+.img-svg a ,.img-svg a img{
+    height: 100%;
+}
+
+img:hover{
+    transform: scale(1.05) ;
+    transition: 200ms ease-in-out;
+    opacity: 0.9;
 }
 
 .header .middle .right{
@@ -111,7 +118,7 @@ h2{
 .blogs{
     display: flex;
     flex-direction: row;
-    width: 85vw;
+    max-width: 75rem;
     min-height: fit-content;
     justify-content: space-around;
     padding: 2rem 0;
@@ -128,11 +135,12 @@ h2{
     box-sizing: border-box;
 }
 .blogs a:hover{
-    transition: 300ms ease-in;
+    transition: 200ms ease-in-out;
     transform:translateY(-0.15rem) ;
     
 }
 .blogs a {
+    text-decoration: none;
     box-sizing: border-box;
     width:22rem;
     margin: .875em .5em;
@@ -203,7 +211,7 @@ footer {
 @media screen and (max-width:720px){
     .header-btn{
         font-size: 1rem;
-        padding: 0.5rem 0.5rem;
+        padding: 0.5rem 1rem;
     }
 }
 @media screen and (max-width:650px){
@@ -214,15 +222,14 @@ footer {
         display: flex;
     
     }
-    .header .middle .left{
-        display: flex;
-        justify-content: space-between;
-        width: 60%;
-    }
+
     .hamburger{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
     }
-    
+    .blog-heading{
+        margin-left: 32%;
+    }
+
 }
