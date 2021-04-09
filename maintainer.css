@@ -235,7 +235,8 @@ p{
     display: flex;
     flex-direction: column;
     justify-items: center;
-    padding: 2rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
     
 }
 .num{
@@ -440,7 +441,7 @@ footer {
         width: 60%;
     }
 }
-@media screen and (max-width:650px){
+@media screen and (max-width:600px){
     .intro-right{
         display: none;
     }
@@ -484,6 +485,7 @@ footer {
     }
     .project ,.info{
         width:100%;
+        height: 12rem;
     }
     .more-info .middle{
         flex-direction: column-reverse !important;
@@ -527,5 +529,8 @@ footer {
     }
     .icons-all{
         width: 90%;
+    }
+    .num{
+        font-size: 12em;
     }
 }

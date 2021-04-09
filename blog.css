@@ -201,20 +201,21 @@ footer {
 }
 
 @media screen and (max-width:870px){
-    .blogs a{
-        width: 100%;
-    }
+    
     .header-btn{
         font-size: 1rem;
     }
 }
-@media screen and (max-width:720px){
+@media screen and (max-width:735px){
     .header-btn{
         font-size: 1rem;
         padding: 0.5rem 1rem;
     }
+    .blogs a{
+        width: 80%;
+    }
 }
-@media screen and (max-width:650px){
+@media screen and (max-width:680px){
     .header .middle .right button{
         display: none;
     }
@@ -229,7 +230,14 @@ footer {
         justify-content: flex-end;
     }
     .blog-heading{
-        margin-left: 32%;
+        position: absolute;
+        left:45%;
+        
     }
-
+    .blogs a{
+        width: 77%;
+    }
+    .right{
+        max-width: fit-content;
+    }
 }
